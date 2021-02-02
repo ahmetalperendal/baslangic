@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+    button{
+        display: block
+    }
+</style>
+
+</head>
+
+<body>
+    <div class="birinci">
+
+    </div>
+    <p class="ikinci">
+        Lorem ipsum dolor sit amet consectetur.
+        <p>
+            Lorem ipsum dolor sit amet.asdasdasdasd
+        </p>
+    </p>
+    <p class="ucuncu">
+        Lorem ipsum dolor sit amet consectetur adipisicing.
+    </p>
+    <img title="resim" id="degistirme" src="https://lh3.googleusercontent.com/proxy/XscS9Awzqi1ylqihuy04WM3urQB2Moux5bnBXH_kEupYEOxUkzWJDtnI82vZQRGtqoBnDnYCNZP0PvnpBVCkQ9lofjAbjfiz16UnXqHRfcZtoTYe-MRKzWI9ThVRfpmy3CTd5ucDwFVa6uZJx91rc5fjZllHX7QnB7uFFI6YxLPDHs_OvEKq5dYBVh4le6YJza1D" alt="">
+    <button onclick="basiniz()">RESMİ DEĞİŞTİR</button>
+
+
+    
+
+
+
+    <script>
+        var bolumsecimi = document.getElementsByClassName("birinci")[0];
+
+        if(bolumsecimi.hasChildNodes()){
+            document.body.innerHTML += "SELAM";
+        }
+        else{
+            document.body.innerHTML += "Selam yok";
+        }
+        
+        var paragraf = document.getElementsByTagName("p");
+        paragraf[0].parentNode.innerHTML += "<p> PARAGRAF </p>";
+
+   
+
+        function basiniz(){
+            var logo = document.getElementById("degistirme");
+            logo.src = "https://klasiksanatlar.com/img/sayfalar/b/1_1598452306_resim.png";
+            logo.title = "merhabalar";
+        }
+       
+
+        var divim = document.createElement("div");
+        document.body.appendChild(divim);
+        var metin = document.createTextNode("Paragraf oluşturuldu.");
+        divim.appendChild(metin);
+
+       /* var petiketim = document.getElementsByClassName("ikinci")[0];
+        var sil = petiketim.childNodes[1].childNodes[0];
+        petiketim.childNodes[1].removeChild(sil); */
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js" integrity="sha512-/DXTXr6nQodMUiq+IUJYCt2PPOUjrHJ9wFrqpJ3XkgPNOZVfMok7cRw6CSxyCQxXn6ozlESsSh1/sMCTF1rL/g==" crossorigin="anonymous"></script>
+    <style>
+    div{
+        width: 500px;
+        height: 300px;
+        background-color:  red;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+
+</style>
+
+
+</head>
+
+
+
+<button>
+    selam
+</button>
+<button>
+    naber
+</button>
+<button>
+    asasa
+</button>
+
+<div>
+    SAYI
+</div>
+
+<script>
+
+for(var i=0;i<3;i++){
+    $("button").eq(i).click({deger:i}, function(event){
+        console.log($("button").eq(event.data.deger).html());
+        $("div").text(event.data.deger);
+    })
+}
+
+    
+</script>
+
+
+
+
+
+    
+</body>
+</html>
