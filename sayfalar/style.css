@@ -3,7 +3,7 @@
 }
 
 body {
-  background-image: url(resimler/resim2.jpg);
+  background-image: url(/resimler/resim2.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -94,7 +94,13 @@ margin-right: 0;
   margin-top: 100px;
   justify-content: space-between;
 }
-
+/*
+@media screen and (max-width:768px) {
+  .slayt {
+    width: 100%;
+  }
+}
+*/
 .container1 .box {
   position: relative;
   width: 500px;
@@ -123,35 +129,43 @@ margin-right: 0;
   font-weight: 700;
   transition: 1s;
 }
-.container1 .box:nth-child(1) .icon{
+
+.container1 .box:nth-child(1) .icon {
   box-shadow: 0 0 0 0 #e91e63;
   background: #e91e63;
 }
-.container1 .box:nth-child(1):hover .icon{
-box-shadow: 0 0 0 400px #e91e63;
-color:#0e0252 ;
+
+.container1 .box:nth-child(1):hover .icon {
+  box-shadow: 0 0 0 400px #e91e63;
+  color: #0e0252;
 }
-.container1 .box:nth-child(1):hover p{
-  color:#0e0252 ;
-  }
-.container1 .box:nth-of-type(3) .icon{
+
+.container1 .box:nth-child(1):hover p {
+  color: #0e0252;
+}
+
+.container1 .box:nth-of-type(3) .icon {
   box-shadow: 0 0 0 0 #23e629;
   background: #23e629;
 }
-.container1 .box:nth-child(3):hover .icon{
-box-shadow: 0 0 0 400px #23e629;
-color:#0e0252 ;
+
+.container1 .box:nth-child(3):hover .icon {
+  box-shadow: 0 0 0 400px #23e629;
+  color: #0e0252;
 }
-.container1 .box:nth-child(3):hover p{
-  color:#0e0252 ;
-  }
-.container1 .box .content{
+
+.container1 .box:nth-child(3):hover p {
+  color: #0e0252;
+}
+
+.container1 .box .content {
   position: relative;
   z-index: 1;
   transition: 0.5s;
 }
-.container1 .box:hover .content{
-color: #fff;
+
+.container1 .box:hover .content {
+  color: #fff;
 }
 
 
@@ -159,9 +173,17 @@ color: #fff;
   margin-top: 10px;
   width: 100%;
   margin-left: 250px;
-
 }
-
+.carousel-inner{
+  max-width: 100%;
+  max-height: 400px;
+}
+@media screen and (max-width: 768px){
+  .carousel-inner{
+    max-width: 100%;
+    max-height: 100px;
+  }
+}
 .site-footer {
   background-image: linear-gradient(to right, #89da97, #021f3b);
   padding: 45px 0 20px;
