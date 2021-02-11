@@ -15,10 +15,6 @@ body {
 }
 
 
-/*.navbar-toggler{
-margin-right: 0;
-}*/
-
 
 
 .logo {
@@ -91,20 +87,15 @@ margin-right: 0;
 
 .container1 {
   display: flex;
-  margin-top: 100px;
-  justify-content: space-between;
+  /* margin-top: 100px; */
+  justify-content:space-around;
+  justify-content: center;
 }
-/*
-@media screen and (max-width:768px) {
-  .slayt {
-    width: 100%;
-  }
-}
-*/
+
 .container1 .box {
-  position: relative;
+  /* position: relative; */
   width: 500px;
-  padding: 30px;
+  /* padding: 30px; */
   background: #fff;
   box-shadow: 0 5px 15px rgba(0, 0, 0, .1);
   border-radius: 20px;
@@ -112,17 +103,19 @@ margin-right: 0;
   box-sizing: border-box;
   overflow: hidden;
   text-align: center;
+  flex: 1;
+  padding-top: 10px;
 }
 
 .container1 .box .icon {
-  position: relative;
+  /* position: relative; */
   width: 80px;
   height: 80px;
   color: #fff;
   background: #000;
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   margin: 0 auto;
   border-radius: 50%;
   font-size: 40px;
@@ -159,8 +152,8 @@ margin-right: 0;
 }
 
 .container1 .box .content {
-  position: relative;
-  z-index: 1;
+  /* position: relative;
+  z-index: 1; */
   transition: 0.5s;
 }
 
@@ -170,18 +163,46 @@ margin-right: 0;
 
 
 .slayt {
+  display: flex;
   margin-top: 10px;
   width: 100%;
-  margin-left: 250px;
+  max-height: 100%;
+  /* margin-left: 250px; */
+  flex: 1;
 }
-.carousel-inner{
-  max-width: 100%;
-  max-height: 400px;
+.slayt .carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
 }
-@media screen and (max-width: 768px){
-  .carousel-inner{
-    max-width: 100%;
-    max-height: 100px;
+.slayt .carousel-item{
+  width: 100%;
+  height: 350px;
+  align-items: center;
+}
+.slayt .carousel-indicators{
+    width: 70%;
+}
+.slayt img{
+    width: 100%;
+}
+@media(max-width:768px){
+    .container1{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media(max-width: 992px){
+  .slayt{
+      flex-direction: column;
+      justify-content:flex-end;
+      height: fit-content;
+  }
+  /*.slayt .carousel-inner{
+    height: 300px;
+  }*/
+  .slayt .carousel-inner{
+    justify-content:center;
   }
 }
 .site-footer {
